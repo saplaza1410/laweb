@@ -31,16 +31,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/home">{{ __('Inicio') }}</a>
+                    <a class="nav-link {{ request()->is('/', 'home') ? 'active' : '' }}" href="/home">{{ __('Inicio') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/services">{{ __('Servicios') }}</a>
+                    <a class="nav-link {{ request()->is('services') ? 'active' : '' }}" href="/services">{{ __('Servicios') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/we">{{ __('Nosotros') }}</a>
+                    <a class="nav-link {{ request()->is('we') ? 'active' : '' }}" href="/we">{{ __('Nosotros') }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/contacts">{{ __('Contacto') }}</a>
+                    <a class="nav-link {{ request()->is('contacts') ? 'active' : '' }}" href="/contacts">{{ __('Contacto') }}</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
