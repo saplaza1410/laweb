@@ -70,4 +70,19 @@ class DesignTest extends TestCase
     {
         $this->get('/we')->assertSee('section-icon', false);
     }
+
+    public function test_contacts_page_has_info_card(): void
+    {
+        $this->get('/contacts')->assertSee('contact-info-card', false);
+    }
+
+    public function test_contacts_page_has_form_card(): void
+    {
+        $this->get('/contacts')->assertSee('contact-form-card', false);
+    }
+
+    public function test_contacts_page_has_paper_plane_icon(): void
+    {
+        $this->get('/contacts')->assertSee('fa-paper-plane', false);
+    }
 }
