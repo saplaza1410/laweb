@@ -100,4 +100,16 @@ class DesignTest extends TestCase
     {
         $this->get('/')->assertSee('footer-copyright', false);
     }
+
+    public function test_stats_bar_translates_to_english(): void
+    {
+        $this->get('/lang/en');
+        $this->get('/')->assertSee('Years of experience');
+    }
+
+    public function test_stats_bar_translates_to_french(): void
+    {
+        $this->get('/lang/fr');
+        $this->get('/')->assertSee("Années d'expérience");
+    }
 }
