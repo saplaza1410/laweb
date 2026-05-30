@@ -23,8 +23,8 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #16171a;">
     <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand" href="#" style="color: white;">
-            <img src="img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="/" style="color: white;">
+            <img src="{{ asset('img/logo.png') }}" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Mi Sitio Web
         </a>
 

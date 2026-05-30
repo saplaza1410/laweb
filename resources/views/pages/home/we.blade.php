@@ -25,7 +25,7 @@ Nosotros
         <p>Creo firmemente en la importancia de la comunicación y la colaboración en cada proyecto. Escucho atentamente las necesidades de mis clientes y me esfuerzo por superar sus expectativas. Mi objetivo es ayudar a las empresas a crecer en el entorno digital mediante soluciones a medida y un excelente servicio al cliente.</p>
 
         <h2>¿Listo para Comenzar?</h2>
-        <p>Si estás buscando un desarrollador web que combine experiencia, pasión y dedicación, ¡no dudes en <a href="/contact" class="text-primary">contactarme</a>! Estoy aquí para ayudarte a llevar tu proyecto al siguiente nivel.</p>
+        <p>Si estás buscando un desarrollador web que combine experiencia, pasión y dedicación, ¡no dudes en <a href="/contacts" class="text-primary">contactarme</a>! Estoy aquí para ayudarte a llevar tu proyecto al siguiente nivel.</p>
     </div>
 </section>
 @endsection
