@@ -25,4 +25,19 @@ class DesignTest extends TestCase
     {
         $this->get('/')->assertSee('social-bar', false);
     }
+
+    public function test_home_has_hero_caption(): void
+    {
+        $this->get('/')->assertSee('hero-caption', false);
+    }
+
+    public function test_home_has_stats_bar(): void
+    {
+        $this->get('/')->assertSee('stats-bar', false);
+    }
+
+    public function test_home_has_cta_section(): void
+    {
+        $this->get('/')->assertSee('cta-section', false);
+    }
 }
