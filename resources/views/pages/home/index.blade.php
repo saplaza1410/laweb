@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('pantalla')
-<!-- Carrusel de imágenes -->
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -27,18 +26,13 @@
         <span class="visually-hidden">Siguiente</span>
     </button>
 </div>
-
-
 @endsection
 
 @section('content')
-<!-- Carrusel de imágenes -->
-
-
 <header class="py-5 text-center" style="background-color: #16171a; color: white;">
     <div class="container">
-        <h1 class="display-4">Bienvenido a Mi Sitio Web</h1>
-        <p class="lead">Ofrecemos soluciones a medida para tu negocio</p>
+        <h1 class="display-4">{{ __('Bienvenido a Mi Sitio Web') }}</h1>
+        <p class="lead">{{ __('Ofrecemos soluciones a medida para tu negocio') }}</p>
     </div>
 </header>
 
@@ -46,19 +40,16 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h2>Sobre Nosotros</h2>
-                <p>Bienvenido a mi página, soy Sergio Plaza, un apasionado desarrollador web con más de 5 años
-                    de experiencia en la creación de soluciones digitales innovadoras y funcionales.
-                    Desde el diseño de sitios web atractivos hasta el desarrollo de aplicaciones complejas,
-                    me dedico a ofrecer un enfoque personalizado para cada proyecto.</p>
+                <h2>{{ __('Sobre Nosotros') }}</h2>
+                <p>{{ __('Bienvenido a mi página, soy Sergio Plaza, un apasionado desarrollador web con más de 5 años de experiencia en la creación de soluciones digitales innovadoras y funcionales. Desde el diseño de sitios web atractivos hasta el desarrollo de aplicaciones complejas, me dedico a ofrecer un enfoque personalizado para cada proyecto.') }}</p>
             </div>
             <div class="col-md-6">
-                <h2>Nuestros Servicios</h2>
+                <h2>{{ __('Nuestros Servicios') }}</h2>
                 <ul>
-                    <li>Desarrollo de software</li>
-                    <li>Marketing digital</li>
-                    <li>Soporte técnico</li>
-                    <li>Desarrollo de apps</li>
+                    <li>{{ __('Desarrollo de software') }}</li>
+                    <li>{{ __('Marketing digital') }}</li>
+                    <li>{{ __('Soporte técnico') }}</li>
+                    <li>{{ __('Desarrollo de apps') }}</li>
                 </ul>
             </div>
         </div>
@@ -67,9 +58,9 @@
 
 <section class="text-center py-5" style="background-color: #f8f9fa;">
     <div class="container">
-        <h2>¿Listo para empezar?</h2>
-        <p>Contáctanos hoy y descubre cómo podemos ayudarte a hacer crecer tu negocio.</p>
-        <a href="contacts" class="btn btn-primary btn-lg">Contáctanos</a>
+        <h2>{{ __('¿Listo para empezar?') }}</h2>
+        <p>{{ __('Contáctanos hoy y descubre cómo podemos ayudarte a hacer crecer tu negocio.') }}</p>
+        <a href="/contacts" class="btn btn-primary btn-lg">{{ __('Contáctanos') }}</a>
     </div>
 </section>
 @endsection

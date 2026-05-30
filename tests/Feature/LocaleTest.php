@@ -35,4 +35,27 @@ class LocaleTest extends TestCase
         $this->get('/');
         $this->assertEquals('en', app()->getLocale());
     }
+
+    public function test_home_shows_spanish_by_default(): void
+    {
+        $this->get('/')->assertSee('Bienvenido a Mi Sitio Web');
+    }
+
+    public function test_home_shows_english_after_switch(): void
+    {
+        $this->get('/lang/en');
+        $this->get('/')->assertSee('Welcome to My Website');
+    }
+
+    public function test_home_shows_french_after_switch(): void
+    {
+        $this->get('/lang/fr');
+        $this->get('/')->assertSee('Bienvenue sur Mon Site Web');
+    }
+
+    public function test_nav_shows_translated_links(): void
+    {
+        $this->get('/lang/en');
+        $this->get('/')->assertSee('Home')->assertSee('Services');
+    }
 }
