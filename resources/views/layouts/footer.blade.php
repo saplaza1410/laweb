@@ -1,9 +1,25 @@
-<footer class="bg-light text-center text-lg-start mt-auto py-3" style="background-color: #16171a !important;">
+<footer>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <h4>{{ __('Contáctanos') }}</h4>
-                <p>{{ __('Si tienes alguna duda o pregunta, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte en todo lo que necesites.') }}</p>
+        <div class="row g-4">
+            <div class="col-md-6 mb-2">
+                <div class="footer-brand">
+                    <span class="brand-dot">·</span> {{ __('Mi Sitio Web') }}
+                </div>
+                <p class="footer-tagline">{{ __('Desarrollador web freelance. Soluciones digitales a medida.') }}</p>
+                <div class="mt-2">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.google.com" target="_blank" class="social-icon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
             </div>
             <div class="col-md-6">
                 <h4>{{ __('Envíanos un Mensaje') }}</h4>
@@ -22,14 +38,16 @@
                     <div class="mb-3">
                         <label for="footer_message" class="form-label">{{ __('Mensaje') }}</label>
                         <textarea class="form-control custom-input" id="footer_message"
-                                  name="message" rows="4" placeholder="{{ __('Tu mensaje') }}" required></textarea>
+                                  name="message" rows="3" placeholder="{{ __('Tu mensaje') }}" required></textarea>
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary btn-lg">{{ __('Enviar Mensaje') }}</button>
+                        <button type="submit" class="btn btn-primary">{{ __('Enviar Mensaje') }}</button>
                     </div>
                 </form>
             </div>
         </div>
-        <p class="text-center mb-0">© {{ date('Y') }} {{ __('Mi Sitio Web') }}. {{ __('Todos los derechos reservados.') }}</p>
+        <div class="footer-copyright">
+            © {{ date('Y') }} {{ __('Mi Sitio Web') }}. {{ __('Todos los derechos reservados.') }}
+        </div>
     </div>
 </footer>

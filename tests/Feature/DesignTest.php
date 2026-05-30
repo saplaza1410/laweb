@@ -85,4 +85,19 @@ class DesignTest extends TestCase
     {
         $this->get('/contacts')->assertSee('fa-paper-plane', false);
     }
+
+    public function test_footer_has_social_icons(): void
+    {
+        $this->get('/')->assertSee('social-icon', false);
+    }
+
+    public function test_footer_has_brand_section(): void
+    {
+        $this->get('/')->assertSee('footer-brand', false);
+    }
+
+    public function test_footer_has_copyright(): void
+    {
+        $this->get('/')->assertSee('footer-copyright', false);
+    }
 }
