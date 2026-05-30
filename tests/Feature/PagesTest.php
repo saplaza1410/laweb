@@ -33,7 +33,7 @@ class PagesTest extends TestCase
 
     public function test_we_page_links_to_contacts(): void
     {
-        $this->get('/we')->assertSee('/contacts');
+        $this->get('/we')->assertSee('<a href="/contacts" class="text-primary">', false);
     }
 
     public function test_logo_uses_asset_helper(): void
