@@ -55,4 +55,19 @@ class DesignTest extends TestCase
     {
         $this->get('/services')->assertSee('page-header', false);
     }
+
+    public function test_we_page_has_timeline(): void
+    {
+        $this->get('/we')->assertSee('timeline', false);
+    }
+
+    public function test_we_page_has_timeline_dot(): void
+    {
+        $this->get('/we')->assertSee('timeline-dot', false);
+    }
+
+    public function test_we_page_has_section_icons(): void
+    {
+        $this->get('/we')->assertSee('section-icon', false);
+    }
 }
