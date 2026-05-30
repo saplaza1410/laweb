@@ -10,4 +10,19 @@ class DesignTest extends TestCase
     {
         $this->get('/')->assertSee('fonts.googleapis.com', false);
     }
+
+    public function test_navbar_has_brand_dot(): void
+    {
+        $this->get('/')->assertSee('brand-dot', false);
+    }
+
+    public function test_navbar_has_scroll_script(): void
+    {
+        $this->get('/')->assertSee('scrolled', false);
+    }
+
+    public function test_navbar_has_social_bar_class(): void
+    {
+        $this->get('/')->assertSee('social-bar', false);
+    }
 }
