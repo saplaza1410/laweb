@@ -40,4 +40,19 @@ class DesignTest extends TestCase
     {
         $this->get('/')->assertSee('cta-section', false);
     }
+
+    public function test_services_page_has_service_icons(): void
+    {
+        $this->get('/services')->assertSee('service-icon', false);
+    }
+
+    public function test_services_page_has_fa_code_icon(): void
+    {
+        $this->get('/services')->assertSee('fa-code', false);
+    }
+
+    public function test_services_page_has_page_header(): void
+    {
+        $this->get('/services')->assertSee('page-header', false);
+    }
 }
